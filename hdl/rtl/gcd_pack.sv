@@ -5,21 +5,21 @@ endpackage
 
 // Edge Detect
 module edge_detect #(parameter RISING=1)
-    (clk, clk_en, rst, in, e);
+    (clk, clk_en, reset, in, e);
     input  clk;
     input  clk_en;
-    input  rst;
+    input  reset;
     input  in;
     output e;
 
     reg tmp;
 
-    always @(posedge clk)
+    always @(posedge clk or posedge reset)
     begin
-        if (clk_en) begin
-            if (rst) // Synchronous reset when reset goes high
-                tmp <= 1'b0;
-            else
+        if (reset) // Asynchronous reset when reset goes high
+            tmp <= in;
+        else begin
+            if (clk_en)
                 tmp <= in;
         end
     end
@@ -29,22 +29,22 @@ endmodule
 
 // Set Clear FF
 module set_reset
-  (clk, clk_en, rst, en, clr, out);
+  (clk, clk_en, reset, en, clr, out);
     input  clk;
     input  clk_en;
-    input  rst;
+    input  reset;
     input  en;
   	input  clr;
     output reg out;
 
-    always @(posedge clk)
+    always @(posedge clk or posedge reset)
     begin
-        if (clk_en) begin
-            if (rst) // Synchronous reset when reset goes high
-                out <= 1'b0;
-            else if (en)
+        if (reset) // Asynchronous reset when reset goes high
+            out <= 1'b0;
+        else begin
+            if (clk_en & en)
                 out <= 1'b1;
-            else if (clr)
+            else if (clk_en & clr)
                 out <= 1'b0;
         end
     end

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/verbosity_pkg.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_common_sv_packages"
+   systemVerilogPackageName="avalon_vip_verbosity_pkg" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_SDRAM.v"
+   type="VERILOG"
+   library="SDRAM" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_SDRAM_test_component.v"
+   type="VERILOG"
+   library="SDRAM" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_Red_LEDs.v"
+   type="VERILOG"
+   library="Red_LEDs" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_Pushbuttons.v"
+   type="VERILOG"
+   library="Pushbuttons" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_ps2.v"
+   type="VERILOG"
+   library="PS2_Port" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_ps2_command_out.v"
+   type="VERILOG"
+   library="PS2_Port" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_ps2_data_in.v"
+   type="VERILOG"
+   library="PS2_Port" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_PS2_Port.v"
+   type="VERILOG"
+   library="PS2_Port" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/fpoint_wrapper.v"
+   type="VERILOG"
+   library="Nios2_2nd_Core_Floating_Point" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/fpoint_qsys.v"
+   type="VERILOG"
+   library="Nios2_2nd_Core_Floating_Point" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/fpoint_hw_qsys.v"
+   type="VERILOG"
+   library="Nios2_2nd_Core_Floating_Point" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_Nios2_2nd_Core.v"
+   type="VERILOG"
+   library="Nios2_2nd_Core" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_Nios2.v"
+   type="VERILOG"
+   library="Nios2" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_JTAG_to_FPGA_Bridge.v"
+   type="VERILOG"
+   library="JTAG_to_FPGA_Bridge" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_JTAG_UART.v"
+   type="VERILOG"
+   library="JTAG_UART" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_irda_counters.v"
+   type="VERILOG"
+   library="IrDA" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_irda_in_deserializer.v"
+   type="VERILOG"
+   library="IrDA" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_irda_out_serializer.v"
+   type="VERILOG"
+   library="IrDA" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_sync_fifo.v"
+   type="VERILOG"
+   library="IrDA" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_IrDA.v"
+   type="VERILOG"
+   library="IrDA" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_Interval_Timer.v"
+   type="VERILOG"
+   library="Interval_Timer" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_HEX3_HEX0.v"
+   type="VERILOG"
+   library="HEX3_HEX0" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_Green_LEDs.v"
+   type="VERILOG"
+   library="Green_LEDs" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/gcd_ci.sv"
+   type="SYSTEM_VERILOG"
+   library="GCD_CI_0" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Altera_UP_Flash_Memory_IP_Core_Avalon_Interface.vhd"
+   type="VHDL"
+   library="Flash" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Altera_UP_Flash_Memory_Controller.vhd"
+   type="VHDL"
+   library="Flash" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Altera_UP_Flash_Memory_IP_Core_Standalone.vhd"
+   type="VHDL"
+   library="Flash" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Altera_UP_Flash_Memory_User_Interface.vhd"
+   type="VHDL"
+   library="Flash" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_Expansion_JP5.v"
+   type="VERILOG"
+   library="Expansion_JP5" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_character_lcd_communication.v"
+   type="VERILOG"
+   library="Char_LCD_16x2" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_character_lcd_initialization.v"
+   type="VERILOG"
+   library="Char_LCD_16x2" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_Char_LCD_16x2.v"
+   type="VERILOG"
+   library="Char_LCD_16x2" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_Audio_Subsystem.v"
+   type="VERILOG"
+   library="Audio_Subsystem" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_av_config_serial_bus_controller.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_slow_clock_generator.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_av_config_auto_init.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_av_config_auto_init_dc2.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_av_config_auto_init_d5m.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_av_config_auto_init_lcm.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_av_config_auto_init_ltm.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_av_config_auto_init_ob_de1_soc.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_av_config_auto_init_ob_de2_115.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_av_config_auto_init_ob_de2i_150.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_av_config_auto_init_ob_de10_standard.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_av_config_auto_init_ob_audio.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_av_config_auto_init_ob_adv7180.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_up_av_config_auto_init_ob_adv7181.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System_AV_Config.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_sdram_partner_module.v"
+   type="VERILOG"
+   library="SDRAM_my_partner" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm_0017.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_video_in_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm_0016.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_vga_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm_0015.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_usb_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm_0014.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_sram_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm_0013.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_slider_switches_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm_0012.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_sd_card_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm_0011.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_red_leds_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm_0010.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_pushbuttons_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm_0009.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_ps2_port_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm_0008.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_irda_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm_0007.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_hex3_hex0_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm_0006.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_green_leds_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm_0005.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_flash_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm_0004.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_expansion_jp5_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm_0003.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_char_lcd_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm_0002.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_av_config_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_avalon_reset_source.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_audio_pll_ref_reset_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_avalon_clock_source.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_audio_pll_ref_clk_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/altera_conduit_bfm.sv"
+   type="SYSTEM_VERILOG"
+   library="Computer_System_inst_audio_bfm" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/submodules/Computer_System.v"
+   type="VERILOG"
+   library="Computer_System_inst" />
+ <file
+   path="Computer_System/testbench/Computer_System_tb/simulation/Computer_System_tb.v"
+   type="VERILOG" />
+ <topLevel name="Computer_System_tb" />
+ <deviceFamily name="cycloneive" />
+ <modelMap
+   controllerPath="Computer_System_tb.Computer_System_inst.SDRAM"
+   modelPath="Computer_System_tb.SDRAM_my_partner" />
+ <modelMap
+   controllerPath="Computer_System_tb.Computer_System_inst.VGA_Subsystem.Char_Buf_Subsystem.Onchip_SRAM"
+   modelPath="Computer_System_tb.Computer_System_inst.VGA_Subsystem.Char_Buf_Subsystem.Onchip_SRAM" />
+</simPackage>

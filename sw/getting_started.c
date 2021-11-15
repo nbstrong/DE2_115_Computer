@@ -1,45 +1,56 @@
 #include "address_map_nios2.h"
-/* This program demonstrates use of parallel ports in the Computer System
- *
- * It performs the following:
- *  1. displays a rotating pattern on the LEDs
- *  2. if a KEY is pressed, uses the SW switches as the pattern
-*/
+#include <stdint.h>
+#include <stdio.h>
+
+#define USERINPUT 0
+
+// Instruction ID and call
+#define INS_GCD_ID 0x00
+#define INS_GCD(a,b) __builtin_custom_inii(INS_GCD_ID,(a),(b))
+
+// Number of repetitions for performance test
+#define N (100000)
+
+int euclids_mod(int a, int b);
+
 int main(void) {
-    /* Declare volatile pointers to I/O registers (volatile means that IO load
-     * and store instructions will be used to access these pointer locations,
-     * instead of regular memory loads and stores)
-    */
-    volatile int * LED_ptr       = (int *)LED_BASE; // LED address
-    volatile int * SW_switch_ptr = (int *)SW_BASE;  // SW slider switch address
-    volatile int * KEY_ptr       = (int *)KEY_BASE; // pushbutton KEY address
+    int a, b = 0;
+    volatile int gcd_ci, gcd_sw, gcd = 0;
 
-    int LED_bits = 0x0F0F0F0F; // pattern for LED lights
-    int SW_value, KEY_value;
-    volatile int
-        delay_count; // volatile so the C compiler doesn't remove the loop
-
-    while (1) {
-        SW_value = *(SW_switch_ptr); // read the SW slider (DIP) switch values
-
-        KEY_value = *(KEY_ptr); // read the pushbutton KEY values
-        if (KEY_value != 0)     // check if any KEY was pressed
-        {
-            /* set pattern using SW values */
-            LED_bits = SW_value | (SW_value << 8) | (SW_value << 16) |
-                       (SW_value << 24);
-            while (*KEY_ptr)
-                ; // wait for pushbutton KEY release
+    while(1) {
+        // Got tired of inputting numbers, change #define at top
+        if(USERINPUT) {
+        printf("\nInput A: ");
+        scanf(" %u",&a);
+        printf("\nInput B: ");
+        scanf(" %u",&b);
         }
-        *(LED_ptr) = LED_bits; // light up the LEDs
+        else {
+            // a = 2147483647;
+            // b = 524287;
+            a = 91;
+            b = 21;
+        }
+        printf("\nA: %u", a);
+        printf("\nB: %u", b);
 
-        /* rotate the pattern shown on the LEDs */
-        if (LED_bits & 0x80000000)
-            LED_bits = (LED_bits << 1) | 1;
-        else
-            LED_bits = LED_bits << 1;
+        gcd_sw = euclids_mod(a, b);
+        gcd_ci = INS_GCD(a, b);
+        gcd = INS(a, b);
 
-        for (delay_count = 350000; delay_count != 0; --delay_count)
-            ; // delay loop
+        printf("\nGCD_SW: %i", gcd_sw);
+        printf("\nGCD_CI: %i", gcd_ci);
+
+        char ch;
+        printf("\n\nPress ENTER to continue.");
+        scanf("%c",&ch);
     }
+}
+
+int euclids_mod(int a, int b)
+{
+    int amb = a % b;
+    if(amb == 0) {
+        return b;}
+    return euclids_mod(b, amb);
 }

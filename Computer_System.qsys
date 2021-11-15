@@ -57,6 +57,14 @@
          type = "boolean";
       }
    }
+   element Computer_System
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone IV E";
+         type = "String";
+      }
+   }
    element Expansion_JP5
    {
       datum _sortIndex
@@ -764,7 +772,7 @@
   <parameter name="AUTO_SYS_CLK_CLOCK_DOMAIN" value="12" />
   <parameter name="AUTO_SYS_CLK_CLOCK_RATE" value="50000000" />
   <parameter name="AUTO_SYS_CLK_RESET_DOMAIN" value="12" />
-  <parameter name="AUTO_UNIQUE_ID">Computer_System_Audio_Subsystem</parameter>
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_Audio_Subsystem</parameter>
  </module>
  <module
    name="Char_LCD_16x2"
@@ -802,7 +810,7 @@
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
   <parameter name="FLASH_MEMORY_ADDRESS_WIDTH" value="23" />
  </module>
- <module name="GCD_CI_0" kind="GCD_CI" version="1.0" enabled="1" />
+ <module name="GCD_CI_0" kind="GCD_CI" version="1.8" enabled="1" />
  <module name="Green_LEDs" kind="altera_avalon_pio" version="18.1" enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
@@ -1408,7 +1416,7 @@
   <parameter name="casLatency" value="3" />
   <parameter name="clockRate" value="50000000" />
   <parameter name="columnWidth" value="10" />
-  <parameter name="componentName">Computer_System_SDRAM</parameter>
+  <parameter name="componentName" value="$${FILENAME}_SDRAM" />
   <parameter name="dataWidth" value="32" />
   <parameter name="generateSimulationModel" value="true" />
   <parameter name="initNOPDelay" value="0.0" />
@@ -1505,7 +1513,7 @@
   <parameter name="AUTO_SYS_CLK_CLOCK_DOMAIN" value="12" />
   <parameter name="AUTO_SYS_CLK_CLOCK_RATE" value="50000000" />
   <parameter name="AUTO_SYS_CLK_RESET_DOMAIN" value="12" />
-  <parameter name="AUTO_UNIQUE_ID">Computer_System_VGA_Subsystem</parameter>
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_VGA_Subsystem</parameter>
   <parameter name="AUTO_VGA_CLK_CLOCK_DOMAIN" value="14" />
   <parameter name="AUTO_VGA_CLK_CLOCK_RATE" value="25000000" />
   <parameter name="AUTO_VGA_CLK_RESET_DOMAIN" value="14" />
@@ -1522,7 +1530,7 @@
   <parameter name="AUTO_SYS_CLK_CLOCK_DOMAIN" value="12" />
   <parameter name="AUTO_SYS_CLK_CLOCK_RATE" value="50000000" />
   <parameter name="AUTO_SYS_CLK_RESET_DOMAIN" value="12" />
-  <parameter name="AUTO_UNIQUE_ID">Computer_System_Video_In_Subsystem</parameter>
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_Video_In_Subsystem</parameter>
   <parameter name="AUTO_VIDEO_IN_DMA_MASTER_ADDRESS_MAP"><![CDATA[<address-map><slave name='SDRAM.s1' start='0x0' end='0x8000000' /><slave name='SRAM.avalon_sram_slave' start='0x8000000' end='0x8200000' /></address-map>]]></parameter>
   <parameter
      name="AUTO_VIDEO_IN_DMA_MASTER_ADDRESS_WIDTH"

@@ -17,7 +17,7 @@ module tb;
     '{91, 21}
   };
 
-  initial begin // You can absolutely have multiple initial blocks
+  initial begin
     clk = 0;
     #5
   	forever #5 clk = ~clk;
@@ -49,9 +49,10 @@ module tb;
       b = test_vec[i][1];
       @(posedge clk)
       start = 1;
-
-      @(posedge done)
+      @(posedge clk)
       start = 0;
+
+      @(posedge done);
     end
 
     repeat (10) @(posedge clk);

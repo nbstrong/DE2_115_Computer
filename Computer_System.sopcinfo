@@ -5,11 +5,11 @@
  version="1.0"
  fabric="QSYS">
  <!-- Format version 18.1 625 (Future versions may contain additional information.) -->
- <!-- 2021.11.14.22:15:57 -->
+ <!-- 2021.11.15.12:09:59 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1636949757</value>
+  <value>1636999798</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -874,7 +874,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="AUTO_GENERATION_ID">
    <type>java.lang.Integer</type>
-   <value>1636949757</value>
+   <value>1636999798</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -5638,7 +5638,7 @@ parameters are a RESULT of the module parameters. -->
    </port>
   </interface>
  </module>
- <module name="GCD_CI_0" kind="GCD_CI" version="1.0" path="GCD_CI_0">
+ <module name="GCD_CI_0" kind="GCD_CI" version="1.8" path="GCD_CI_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <parameter name="deviceFamily">
@@ -28733,7 +28733,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1636949757</value>
+   <value>1636999798</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -28753,7 +28753,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1636949757</value>
+   <value>1636999798</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -28769,7 +28769,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1636949757</value>
+   <value>1636999798</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -30702,7 +30702,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="AUTO_GENERATION_ID">
    <type>java.lang.Integer</type>
-   <value>1636949757</value>
+   <value>1636999798</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -32948,7 +32948,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="AUTO_GENERATION_ID">
    <type>java.lang.Integer</type>
-   <value>1636949757</value>
+   <value>1636999798</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -44394,7 +44394,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="AUTO_GENERATION_ID">
    <type>java.lang.Integer</type>
-   <value>1636949757</value>
+   <value>1636999798</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -49161,7 +49161,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="AUTO_GENERATION_ID">
    <type>java.lang.Integer</type>
-   <value>1636949757</value>
+   <value>1636999798</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -66672,7 +66672,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>GCD_CI</displayName>
-  <version>1.0</version>
+  <version>1.8</version>
  </plugin>
  <plugin>
   <instanceCount>3</instanceCount>
