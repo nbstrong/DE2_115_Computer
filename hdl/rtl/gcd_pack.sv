@@ -17,7 +17,7 @@ module edge_detect #(parameter RISING=1)
     always @(posedge clk)
     begin
         if (clk_en) begin
-            if (rst) // Asynchronous reset when reset goes high
+            if (rst) // Synchronous reset when reset goes high
                 tmp <= 1'b0;
             else
                 tmp <= in;
@@ -40,7 +40,7 @@ module set_reset
     always @(posedge clk)
     begin
         if (clk_en) begin
-            if (rst) // Asynchronous reset when reset goes high
+            if (rst) // Synchronous reset when reset goes high
                 out <= 1'b0;
             else if (en)
                 out <= 1'b1;
