@@ -47,6 +47,7 @@ module Computer_System_Nios2_cpu_test_bench (
                                                W_estatus_reg,
                                                W_exception_reg,
                                                W_iw,
+                                               W_iw_custom_n,
                                                W_iw_op,
                                                W_iw_opx,
                                                W_pcb,
@@ -107,6 +108,7 @@ module Computer_System_Nios2_cpu_test_bench (
   input   [ 31: 0] W_estatus_reg;
   input   [ 31: 0] W_exception_reg;
   input   [ 31: 0] W_iw;
+  input   [  7: 0] W_iw_custom_n;
   input   [  5: 0] W_iw_op;
   input   [  5: 0] W_iw_opx;
   input   [ 27: 0] W_pcb;
@@ -219,6 +221,7 @@ wire             W_op_flushd;
 wire             W_op_flushda;
 wire             W_op_flushi;
 wire             W_op_flushp;
+wire             W_op_gcd_ci_0;
 wire             W_op_hbreak;
 wire             W_op_initd;
 wire             W_op_initda;
@@ -444,7 +447,8 @@ wire             test_has_ended;
   assign W_op_intr = (W_iw_opx == 61) & W_is_opx_inst;
   assign W_op_crst = (W_iw_opx == 62) & W_is_opx_inst;
   assign W_op_opx_rsv63 = (W_iw_opx == 63) & W_is_opx_inst;
-  assign W_op_nios2_floating_point = W_op_custom & 1'b1;
+  assign W_op_gcd_ci_0 = W_op_custom & ({W_iw_custom_n[7 : 0]} == 8'h0);
+  assign W_op_nios2_floating_point = W_op_custom & ({W_iw_custom_n[7 : 2] , 2'b0} == 8'hfc);
   assign W_is_opx_inst = W_iw_op == 58;
   always @(posedge clk or negedge reset_n)
     begin

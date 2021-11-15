@@ -97,6 +97,14 @@
          type = "boolean";
       }
    }
+   element GCD_CI_0
+   {
+      datum _sortIndex
+      {
+         value = "35";
+         type = "int";
+      }
+   }
    element Green_LEDs
    {
       datum _sortIndex
@@ -794,6 +802,7 @@
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
   <parameter name="FLASH_MEMORY_ADDRESS_WIDTH" value="23" />
  </module>
+ <module name="GCD_CI_0" kind="GCD_CI" version="1.0" enabled="1" />
  <module name="Green_LEDs" kind="altera_avalon_pio" version="18.1" enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
@@ -974,7 +983,7 @@
   <parameter name="cpuArchRev" value="1" />
   <parameter name="cpuID" value="0" />
   <parameter name="cpuReset" value="false" />
-  <parameter name="customInstSlavesSystemInfo"><![CDATA[<info><slave name="nios2_floating_point" baseAddress="252" addressSpan="4" clockCycleType="VARIABLE" /></info>]]></parameter>
+  <parameter name="customInstSlavesSystemInfo"><![CDATA[<info><slave name="gcd_ci_0" baseAddress="0" addressSpan="1" clockCycleType="COMBINATORIAL" /><slave name="nios2_floating_point" baseAddress="252" addressSpan="4" clockCycleType="VARIABLE" /></info>]]></parameter>
   <parameter name="customInstSlavesSystemInfo_nios_a" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_b" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_c" value="&lt;info/&gt;" />
@@ -2599,6 +2608,11 @@
    kind="clock"
    version="18.1"
    start="System_PLL.sys_clk"
+   end="GCD_CI_0.clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="System_PLL.sys_clk"
    end="VGA_Subsystem.sys_clk" />
  <connection
    kind="clock"
@@ -2760,6 +2774,15 @@
    start="Nios2_2nd_Core.irq"
    end="Interval_Timer_2nd_Core_2.irq">
   <parameter name="irqNumber" value="2" />
+ </connection>
+ <connection
+   kind="nios_custom_instruction"
+   version="18.1"
+   start="Nios2.custom_instruction_master"
+   end="GCD_CI_0.nios_custom_instruction_slave">
+  <parameter name="CIName" value="gcd_ci_0" />
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0" />
  </connection>
  <connection
    kind="nios_custom_instruction"
@@ -2929,6 +2952,11 @@
    version="18.1"
    start="System_PLL.reset_source"
    end="Char_LCD_16x2.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="System_PLL.reset_source"
+   end="GCD_CI_0.reset" />
  <connection
    kind="reset"
    version="18.1"
