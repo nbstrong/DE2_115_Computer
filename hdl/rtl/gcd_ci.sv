@@ -15,7 +15,7 @@ module gcd_ci(
 
     edge_detect ED (clk, clk_en, reset, start, start_int);
 
-    always @(posedge gated_clk or posedge reset)
+    always @(posedge clk or posedge reset)
     begin
         if(reset) begin
             a      <=  1'b0;

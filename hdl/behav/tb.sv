@@ -7,7 +7,7 @@ module tb;
 
   // Instantiate design under test
   gcd_ci
-  GCD (.clk(clk), .rst(rst), .clk_en(clk_en), .start(start), .dataa(a), .datab(b), .done(done), .result(c));
+  GCD (.clk(clk), .reset(rst), .clk_en(clk_en), .start(start), .dataa(a), .datab(b), .done(done), .result(c));
 
   integer test_vec[][2] = '{
     '{2147483647,524287},
