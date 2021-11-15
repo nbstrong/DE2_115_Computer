@@ -2,7 +2,7 @@ import gcd_pack::*;
 
 module gcd_ci(
     input clk,
-    input rst,
+    input reset,
     input clk_en,
     input start,
     input [31:0] dataa,
@@ -11,22 +11,20 @@ module gcd_ci(
     output reg [31:0] result);
 
     logic [31:0] tmp, b, a;
-    logic gated_clk, start_int;
+    logic start_int;
 
-    assign gated_clk = clk & clk_en;
+    edge_detect ED (clk, clk_en, reset, start, start_int);
 
-    edge_detect ED (gated_clk, rst, start, start_int);
-
-    always @(posedge gated_clk or posedge rst)
+    always @(posedge gated_clk or posedge reset)
     begin
-        if(rst != 0) begin
+        if(reset) begin
             a      <=  1'b0;
             b      <=  1'b0;
             tmp    <=  1'b0;
             done   <=  1'b1;
             result <= 31'b0;
         end
-        else begin
+        else if (clk_en) begin
             if (start_int) begin
                 a       <= dataa;
                 b       <= datab;

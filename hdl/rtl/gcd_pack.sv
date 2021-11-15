@@ -5,8 +5,9 @@ endpackage
 
 // Edge Detect
 module edge_detect #(parameter RISING=1)
-    (clk, rst, in, e);
+    (clk, clk_en, rst, in, e);
     input  clk;
+    input  clk_en;
     input  rst;
     input  in;
     output e;
@@ -18,7 +19,8 @@ module edge_detect #(parameter RISING=1)
         if (rst) begin
             // Asynchronous reset when reset goes high
             tmp <= 1'b0;
-        end else begin
+        end
+        else if (clk_en) begin
             tmp <= in;
         end
     end
@@ -28,8 +30,9 @@ endmodule
 
 // Set Clear FF
 module set_reset
-  (clk, rst, en, clr, out);
+  (clk, clk_en, rst, en, clr, out);
     input  clk;
+    input  clk_en;
     input  rst;
     input  en;
   	input  clr;
@@ -40,7 +43,8 @@ module set_reset
         if (rst) begin
             // Asynchronous reset when reset goes high
             out <= 1'b0;
-        end else begin
+        end
+        else if (clk_en) begin
             // Set has priority
             if (en) begin
                 out <= 1'b1;
