@@ -10,7 +10,7 @@
 #include <stdint.h>
 #include <stdio.h>
 
-#define USERINPUT 1 // Whether to get user input or not
+#define USERINPUT 0 // Whether to get user input or not
 #define VECLENGTH 5 // Length of test vector array
 
 #define INTERVAL_TIMER_BASE_PTR *(volatile uint32_t*)INTERVAL_TIMER_BASE
@@ -71,7 +71,7 @@ int main(void) {
         printf("\nGCD_CI: %x", gcd_ci);
         printf("\nSW Cycles: %i SW Time: %E sec", sw_timer_total, ((float)sw_timer_total)/alt_timestamp_freq());
         printf("\nCI Cycles: %i CI Time: %E sec", ci_timer_total, ((float)ci_timer_total)/alt_timestamp_freq());
-        printf("\nSpeedup: %f", ( (float)sw_timer_total/alt_timestamp_freq() ) / ( (float)ci_timer_total/alt_timestamp_freq() ) );
+        printf("\nSpeedup: %f", ((float)sw_timer_total/alt_timestamp_freq()) / ((float)ci_timer_total)/alt_timestamp_freq()));
 
         printf("\n");
     }
