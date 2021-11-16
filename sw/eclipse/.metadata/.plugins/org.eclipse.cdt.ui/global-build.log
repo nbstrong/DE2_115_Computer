@@ -1,10 +1,19 @@
-12:05:18 **** Incremental Build of configuration Nios II for project de2_115_gcd ****
+23:36:35 **** Incremental Build of configuration Nios II for project de2_115_gcd ****
 make all 
 Info: Building ../de2_115_bsp/
 Z:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../de2_115_bsp/
 [BSP build complete]
+Info: Compiling main.cpp to obj/default/main.o
+nios2-elf-gcc -xc++ -MP -MMD -c -I../de2_115_bsp//HAL/inc -I../de2_115_bsp/ -I../de2_115_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED      -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o obj/default/main.o main.cpp
+Info: Linking de2_115_gcd.elf
+nios2-elf-g++  -T'../de2_115_bsp//linker.x' -msys-crt0='../de2_115_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../de2_115_bsp/  -mcustom-fpu-cfg=60-2  -Wl,-Map=de2_115_gcd.map   -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o de2_115_gcd.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert de2_115_gcd.elf --thread_model hal --cpu_name Nios2 --qsys true --simulation_enabled false --id 0 --sidp 0xff202040 --timestamp 1637035105 --stderr_dev JTAG_UART --stdin_dev JTAG_UART --stdout_dev JTAG_UART --sopc_system_name Computer_System --jdi Z:/git_wa/quartus/DE2_115_Computer/software/de2_115_bsp/../../DE2_115_Computer.jdi --sopcinfo Z:/git_wa/quartus/DE2_115_Computer/software/de2_115_bsp/../../Computer_System.sopcinfo
+Info: (de2_115_gcd.elf) 78 KBytes program size (code + initialized data).
+Info:                   65450 KBytes free for stack + heap.
+Info: Creating de2_115_gcd.objdump
+nios2-elf-objdump --disassemble --syms --all-header de2_115_gcd.elf >de2_115_gcd.objdump
 [de2_115_gcd build complete]
-12:05:27 **** Incremental Build of configuration Nios II for project de2_115_gcd ****
+23:36:51 **** Incremental Build of configuration Nios II for project de2_115_gcd ****
 make all 
 Info: Building ../de2_115_bsp/
 Z:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../de2_115_bsp/

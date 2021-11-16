@@ -3,7 +3,7 @@
 <stringAttribute key="byteStreamDeviceCableName" value="USB-Blaster on localhost [USB-0]"/>
 <stringAttribute key="byteStreamDeviceDeviceID" value="1"/>
 <stringAttribute key="byteStreamDeviceInstanceID" value="0"/>
-<stringAttribute key="com.altera.sbtgui.launch.REMOTE_PORT" value="55176"/>
+<stringAttribute key="com.altera.sbtgui.launch.REMOTE_PORT" value="55550"/>
 <booleanAttribute key="downloadProgram" value="true"/>
 <stringAttribute key="elfFile" value="Z:\git_wa\quartus\DE2_115_Computer\software\de2_115_gcd\de2_115_gcd.elf"/>
 <stringAttribute key="elfUserFile" value="Z:\git_wa\quartus\DE2_115_Computer\software\de2_115_gcd\de2_115_gcd.elf"/>
