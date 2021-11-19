@@ -1,9 +1,0 @@
-23:53:46 **** Incremental Build of configuration Nios II for project de2_115_gcd ****
-make all 
-Info: Building ../de2_115_bsp/
-Z:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../de2_115_bsp/
-[BSP build complete]
-[de2_115_gcd build complete]
-
-23:53:46 Build Finished (took 705ms)
-

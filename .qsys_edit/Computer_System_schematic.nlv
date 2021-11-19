@@ -1,0 +1,136 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst Computer_System.Video_In_Subsystem.Video_In_RGB_Resampler -pg 1
+preplace inst Computer_System.Video_In_Subsystem.Video_In_Edge_Detection_Subsystem.Chroma_Upsampler -pg 1
+preplace inst Computer_System.Video_In_Subsystem.Video_In_Edge_Detection_Subsystem.Chroma_Filter -pg 1
+preplace inst Computer_System.JTAG_to_FPGA_Bridge.p2b -pg 1
+preplace inst Computer_System.Video_PLL -pg 1 -lvl 1 -y 1430
+preplace inst Computer_System.VGA_Subsystem.VGA_Pixel_FIFO -pg 1
+preplace inst Computer_System.JTAG_to_FPGA_Bridge.b2p_adapter -pg 1
+preplace inst Computer_System.VGA_Subsystem -pg 1 -lvl 2 -y 1230
+preplace inst Computer_System.Nios2_2nd_Core -pg 1 -lvl 3 -y 1700
+preplace inst Computer_System.VGA_Subsystem.VGA_Pixel_DMA -pg 1
+preplace inst Computer_System.Nios2.reset_bridge -pg 1
+preplace inst Computer_System.Video_In_Subsystem.Sys_Clk -pg 1
+preplace inst Computer_System.SysID -pg 1 -lvl 4 -y 1760
+preplace inst Computer_System.VGA_Subsystem.Char_Buf_Subsystem.ASCII_to_Image -pg 1
+preplace inst Computer_System.Interval_Timer_2nd_Core -pg 1 -lvl 5 -y 1380
+preplace inst Computer_System.VGA_Subsystem.VGA_Pixel_Scaler -pg 1
+preplace inst Computer_System.Interval_Timer -pg 1 -lvl 5 -y 1180
+preplace inst Computer_System.Nios2_Floating_Point -pg 1 -lvl 5 -y 310
+preplace inst Computer_System.Video_PLL.reset_from_locked -pg 1
+preplace inst Computer_System.Video_In_Subsystem.Video_In -pg 1
+preplace inst Computer_System.Pushbuttons -pg 1 -lvl 5 -y 940
+preplace inst Computer_System.Video_In_Subsystem.Video_In_Edge_Detection_Subsystem.Sys_Clk -pg 1
+preplace inst Computer_System.Red_LEDs -pg 1 -lvl 4 -y 1060
+preplace inst Computer_System.Audio_Subsystem -pg 1 -lvl 5 -y 50
+preplace inst Computer_System.VGA_Subsystem.Char_Buf_Subsystem -pg 1
+preplace inst Computer_System.Video_In_Subsystem.Video_In_Edge_Detection_Subsystem.Video_Stream_Splitter -pg 1
+preplace inst Computer_System.VGA_Subsystem.VGA_Alpha_Blender -pg 1
+preplace inst Computer_System.SRAM -pg 1 -lvl 4 -y 1440
+preplace inst Computer_System.VGA_Subsystem.Char_Buf_Subsystem.Sys_Clk -pg 1
+preplace inst Computer_System.JTAG_to_FPGA_Bridge.timing_adt -pg 1
+preplace inst Computer_System.VGA_Subsystem.Char_Buf_Subsystem.Char_Buf_RGB_Resampler -pg 1
+preplace inst Computer_System.VGA_Subsystem.Sys_Clk -pg 1
+preplace inst Computer_System.Audio_Subsystem.Audio -pg 1
+preplace inst Computer_System.PS2_Port_Dual -pg 1 -lvl 5 -y 820
+preplace inst Computer_System.Video_In_Subsystem.Video_In_Chroma_Resampler -pg 1
+preplace inst Computer_System.Interval_Timer_2 -pg 1 -lvl 5 -y 1280
+preplace inst Computer_System.JTAG_to_FPGA_Bridge.fifo -pg 1
+preplace inst Computer_System.HEX3_HEX0 -pg 1 -lvl 4 -y 780
+preplace inst Computer_System.JTAG_to_FPGA_Bridge.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst Computer_System.JTAG_to_FPGA_Bridge.clk_src -pg 1
+preplace inst Computer_System.System_PLL.reset_from_locked -pg 1
+preplace inst Computer_System.Video_In_Subsystem.Video_In_CSC -pg 1
+preplace inst Computer_System.Video_In_Subsystem -pg 1 -lvl 2 -y 1550
+preplace inst Computer_System.VGA_Subsystem.Char_Buf_Subsystem.Char_Buf_Scaler -pg 1
+preplace inst Computer_System.Green_LEDs -pg 1 -lvl 4 -y 640
+preplace inst Computer_System.Audio_Subsystem.Sys_Clk -pg 1
+preplace inst Computer_System.Audio_Subsystem.Audio_PLL.reset_from_locked -pg 1
+preplace inst Computer_System.JTAG_to_FPGA_Bridge.p2b_adapter -pg 1
+preplace inst Computer_System.VGA_Subsystem.Char_Buf_Subsystem.Char_Buf_DMA -pg 1
+preplace inst Computer_System.Video_PLL.video_pll -pg 1
+preplace inst Computer_System.VGA_Subsystem.VGA_Pixel_RGB_Resampler -pg 1
+preplace inst Computer_System.System_PLL -pg 1 -lvl 1 -y 1790
+preplace inst Computer_System.SD_Card -pg 1 -lvl 4 -y 1240
+preplace inst Computer_System.HEX7_HEX4 -pg 1 -lvl 4 -y 910
+preplace inst Computer_System.Serial_Port -pg 1 -lvl 5 -y 1060
+preplace inst Computer_System.AV_Config -pg 1 -lvl 4 -y 300
+preplace inst Computer_System.Video_In_Subsystem.Video_In_Scaler -pg 1
+preplace inst Computer_System.Video_In_Subsystem.Video_In_Edge_Detection_Subsystem.Edge_Detection -pg 1
+preplace inst Computer_System.Video_In_Subsystem.Video_In_Edge_Detection_Subsystem -pg 1
+preplace inst Computer_System.Video_In_Subsystem.Video_In_DMA -pg 1
+preplace inst Computer_System.Nios2_2nd_Core.cpu -pg 1
+preplace inst Computer_System.Slider_Switches -pg 1 -lvl 4 -y 1560
+preplace inst Computer_System.Nios2.clock_bridge -pg 1
+preplace inst Computer_System.JTAG_to_FPGA_Bridge.transacto -pg 1
+preplace inst Computer_System.Nios2_2nd_Core_Floating_Point -pg 1 -lvl 5 -y 1680
+preplace inst Computer_System.Expansion_JP5 -pg 1 -lvl 5 -y 380
+preplace inst Computer_System.JTAG_UART_2nd_Core -pg 1 -lvl 5 -y 1720
+preplace inst Computer_System.JTAG_UART -pg 1 -lvl 5 -y 1580
+preplace inst Computer_System.JTAG_to_FPGA_Bridge.clk_rst -pg 1
+preplace inst Computer_System.VGA_Subsystem.VGA_Controller -pg 1
+preplace inst Computer_System.JTAG_to_FPGA_Bridge.b2p -pg 1
+preplace inst Computer_System.USB -pg 1 -lvl 5 -y 1840
+preplace inst Computer_System.SDRAM -pg 1 -lvl 4 -y 1340
+preplace inst Computer_System.PS2_Port -pg 1 -lvl 5 -y 700
+preplace inst Computer_System.IrDA -pg 1 -lvl 5 -y 580
+preplace inst Computer_System.VGA_Subsystem.Char_Buf_Subsystem.Set_Black_Transparent -pg 1
+preplace inst Computer_System.Flash -pg 1 -lvl 4 -y 520
+preplace inst Computer_System.Char_LCD_16x2 -pg 1 -lvl 4 -y 420
+preplace inst Computer_System.Video_In_Subsystem.Video_In_Edge_Detection_Subsystem.Video_Stream_Merger -pg 1
+preplace inst Computer_System.VGA_Subsystem.VGA_Dual_Clock_FIFO -pg 1
+preplace inst Computer_System.VGA_Subsystem.VGA_Clk -pg 1
+preplace inst Computer_System.Nios2 -pg 1 -lvl 4 -y 150
+preplace inst Computer_System.GCD_CI_0 -pg 1 -lvl 5 -y 230
+preplace inst Computer_System.Audio_Subsystem.Audio_PLL -pg 1
+preplace inst Computer_System.System_PLL.sys_pll -pg 1
+preplace inst Computer_System.Video_In_Subsystem.Video_In_Edge_Detection_Subsystem.Edge_Detection_Router_Controller -pg 1
+preplace inst Computer_System.Nios2.cpu -pg 1
+preplace inst Computer_System.Nios2_2nd_Core.reset_bridge -pg 1
+preplace inst Computer_System.Nios2_2nd_Core.clock_bridge -pg 1
+preplace inst Computer_System.VGA_Subsystem.Char_Buf_Subsystem.Onchip_SRAM -pg 1
+preplace inst Computer_System.Interval_Timer_2nd_Core_2 -pg 1 -lvl 5 -y 1480
+preplace inst Computer_System.Video_In_Subsystem.Video_In_Clipper -pg 1
+preplace inst Computer_System -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst Computer_System.Audio_Subsystem.Audio_PLL.audio_pll -pg 1
+preplace inst Computer_System.JTAG_to_FPGA_Bridge -pg 1 -lvl 2 -y 1830
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Computer_System.video_pll_ref_reset,(SLAVE)Video_PLL.ref_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Video_PLL.ref_clk,(SLAVE)Computer_System.video_pll_ref_clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Computer_System.green_leds,(SLAVE)Green_LEDs.external_connection) 1 0 4 NJ 670 NJ 670 NJ 670 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Flash.conduit_end,(SLAVE)Computer_System.flash) 1 0 4 NJ 550 NJ 550 NJ 550 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)USB.external_interface,(SLAVE)Computer_System.usb) 1 0 5 NJ 1910 NJ 1910 NJ 1890 NJ 1890 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Computer_System.system_pll_ref_clk,(SLAVE)System_PLL.ref_clk) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>Computer_System</net_container>(SLAVE)VGA_Subsystem.vga_reset,(MASTER)Video_PLL.reset_source) 1 1 1 410
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Computer_System.av_config,(SLAVE)AV_Config.external_interface) 1 0 4 NJ 350 NJ 350 NJ 350 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(MASTER)Audio_Subsystem.audio_pll_clk,(MASTER)Computer_System.audio_pll_clk) 1 5 1 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)HEX7_HEX4.external_connection,(SLAVE)Computer_System.hex7_hex4) 1 0 4 NJ 940 NJ 940 NJ 940 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Computer_System.audio,(SLAVE)Audio_Subsystem.audio) 1 0 5 NJ 60 NJ 60 NJ 60 NJ 60 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Computer_System.video_in,(SLAVE)Video_In_Subsystem.video_in) 1 0 2 NJ 1600 NJ
+preplace netloc POINT_TO_POINT<net_container>Computer_System</net_container>(SLAVE)Nios2_2nd_Core_Floating_Point.s1,(MASTER)Nios2_2nd_Core.custom_instruction_master) 1 3 2 NJ 1730 1920
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Computer_System.irda,(SLAVE)IrDA.external_interface) 1 0 5 NJ 750 NJ 750 NJ 750 NJ 750 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Computer_System.audio_pll_ref_reset,(SLAVE)Audio_Subsystem.audio_pll_ref_reset) 1 0 5 NJ 110 NJ 110 NJ 110 NJ 110 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Serial_Port.external_interface,(SLAVE)Computer_System.serial_port) 1 0 5 NJ 1170 NJ 1170 NJ 1170 NJ 1170 NJ
+preplace netloc FAN_OUT<net_container>Computer_System</net_container>(SLAVE)IrDA.clk,(SLAVE)VGA_Subsystem.sys_clk,(SLAVE)Red_LEDs.clk,(SLAVE)Flash.clk,(MASTER)System_PLL.sys_clk,(SLAVE)Green_LEDs.clk,(SLAVE)HEX3_HEX0.clk,(SLAVE)Interval_Timer.clk,(SLAVE)Nios2_2nd_Core.clk,(SLAVE)SDRAM.clk,(SLAVE)JTAG_UART.clk,(SLAVE)Interval_Timer_2nd_Core.clk,(SLAVE)HEX7_HEX4.clk,(SLAVE)SysID.clk,(SLAVE)PS2_Port_Dual.clk,(SLAVE)JTAG_to_FPGA_Bridge.clk,(SLAVE)SRAM.clk,(SLAVE)Expansion_JP5.clk,(SLAVE)Video_In_Subsystem.sys_clk,(SLAVE)Serial_Port.clk,(SLAVE)SD_Card.clk,(SLAVE)Char_LCD_16x2.clk,(SLAVE)Nios2.clk,(SLAVE)PS2_Port.clk,(SLAVE)USB.clk,(SLAVE)Interval_Timer_2nd_Core_2.clk,(SLAVE)Interval_Timer_2.clk,(SLAVE)JTAG_UART_2nd_Core.clk,(SLAVE)Audio_Subsystem.sys_clk,(SLAVE)Slider_Switches.clk,(SLAVE)AV_Config.clk,(SLAVE)Pushbuttons.clk) 1 1 4 470 1690 1000 1550 1440 1690 1900
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Computer_System.hex3_hex0,(SLAVE)HEX3_HEX0.external_connection) 1 0 4 NJ 810 NJ 810 NJ 810 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Computer_System.audio_pll_ref_clk,(SLAVE)Audio_Subsystem.audio_pll_ref_clk) 1 0 5 NJ 90 NJ 90 NJ 90 NJ 90 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Computer_System.ps2_port_dual,(SLAVE)PS2_Port_Dual.external_interface) 1 0 5 NJ 900 NJ 900 NJ 900 NJ 900 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)PS2_Port.external_interface,(SLAVE)Computer_System.ps2_port) 1 0 5 NJ 770 NJ 770 NJ 770 NJ 770 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Computer_System.expansion_jp5,(SLAVE)Expansion_JP5.external_connection) 1 0 5 NJ 410 NJ 410 NJ 410 NJ 410 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Computer_System.system_pll_ref_reset,(SLAVE)System_PLL.ref_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)SD_Card.conduit_end,(SLAVE)Computer_System.sd_card) 1 0 4 NJ 1370 NJ 1450 NJ 1290 NJ
+preplace netloc FAN_OUT<net_container>Computer_System</net_container>(MASTER)Nios2.custom_instruction_master,(SLAVE)GCD_CI_0.ncs_cis0,(SLAVE)Nios2_Floating_Point.s1) 1 4 1 1880
+preplace netloc INTERCONNECT<net_container>Computer_System</net_container>(MASTER)Nios2.irq,(MASTER)Nios2_2nd_Core.irq,(SLAVE)IrDA.interrupt,(SLAVE)Interval_Timer_2nd_Core_2.irq,(SLAVE)PS2_Port_Dual.interrupt,(SLAVE)Serial_Port.interrupt,(SLAVE)JTAG_UART_2nd_Core.irq,(SLAVE)USB.interrupt,(SLAVE)Interval_Timer_2.irq,(SLAVE)Audio_Subsystem.audio_irq,(SLAVE)PS2_Port.interrupt,(SLAVE)Pushbuttons.irq,(SLAVE)Interval_Timer_2nd_Core.irq,(SLAVE)Expansion_JP5.irq,(SLAVE)JTAG_UART.irq,(SLAVE)Interval_Timer.irq) 1 3 2 NJ 1850 1860
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)SRAM.external_interface,(SLAVE)Computer_System.sram) 1 0 4 NJ 1510 NJ 1490 NJ 1490 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Computer_System.pushbuttons,(SLAVE)Pushbuttons.external_connection) 1 0 5 NJ 1020 NJ 1020 NJ 1020 NJ 1020 NJ
+preplace netloc INTERCONNECT<net_container>Computer_System</net_container>(SLAVE)SDRAM.reset,(SLAVE)PS2_Port_Dual.reset,(MASTER)Nios2.debug_reset_request,(SLAVE)HEX7_HEX4.reset,(SLAVE)SysID.reset,(SLAVE)VGA_Subsystem.sys_reset,(SLAVE)HEX3_HEX0.reset,(SLAVE)Interval_Timer.reset,(SLAVE)Interval_Timer_2nd_Core.reset,(SLAVE)JTAG_UART.reset,(SLAVE)SD_Card.reset,(SLAVE)Serial_Port.reset,(SLAVE)JTAG_UART_2nd_Core.reset,(SLAVE)JTAG_to_FPGA_Bridge.clk_reset,(SLAVE)Audio_Subsystem.sys_reset,(SLAVE)Expansion_JP5.reset,(SLAVE)Green_LEDs.reset,(SLAVE)Slider_Switches.reset,(MASTER)Nios2_2nd_Core.debug_reset_request,(SLAVE)SRAM.reset,(SLAVE)Pushbuttons.reset,(SLAVE)Interval_Timer_2nd_Core_2.reset,(SLAVE)Red_LEDs.reset,(MASTER)System_PLL.reset_source,(SLAVE)Interval_Timer_2.reset,(SLAVE)Char_LCD_16x2.reset,(SLAVE)Flash.reset,(SLAVE)PS2_Port.reset,(SLAVE)Video_In_Subsystem.sys_reset,(SLAVE)Nios2.reset,(SLAVE)Nios2_2nd_Core.reset,(SLAVE)USB.reset,(SLAVE)AV_Config.reset,(SLAVE)IrDA.reset) 1 1 4 490 1770 1000 1840 1420 1710 1960
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)VGA_Subsystem.vga,(SLAVE)Computer_System.vga) 1 0 2 NJ 1350 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(MASTER)System_PLL.sdram_clk,(MASTER)Computer_System.sdram_clk) 1 1 5 NJ 1790 NJ 1870 NJ 1870 NJ 1830 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)SDRAM.wire,(SLAVE)Computer_System.sdram) 1 0 4 NJ 1390 NJ 1470 NJ 1410 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Char_LCD_16x2.external_interface,(SLAVE)Computer_System.char_lcd) 1 0 4 NJ 470 NJ 470 NJ 470 NJ
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Slider_Switches.external_connection,(SLAVE)Computer_System.slider_switches) 1 0 4 NJ 1710 NJ 1710 NJ 1590 NJ
+preplace netloc INTERCONNECT<net_container>Computer_System</net_container>(SLAVE)Interval_Timer_2nd_Core_2.s1,(SLAVE)Audio_Subsystem.audio_slave,(SLAVE)Video_In_Subsystem.video_in_dma_control_slave,(SLAVE)Interval_Timer_2nd_Core.s1,(MASTER)Nios2_2nd_Core.data_master,(SLAVE)Serial_Port.avalon_rs232_slave,(SLAVE)VGA_Subsystem.char_buffer_slave,(SLAVE)Flash.flash_erase_control,(SLAVE)Red_LEDs.s1,(MASTER)JTAG_to_FPGA_Bridge.master,(MASTER)Nios2_2nd_Core.instruction_master,(SLAVE)SysID.control_slave,(SLAVE)JTAG_UART_2nd_Core.avalon_jtag_slave,(SLAVE)SD_Card.avalon_sdcard_slave,(SLAVE)Pushbuttons.s1,(SLAVE)Video_In_Subsystem.video_in_edge_detection_control_slave,(SLAVE)PS2_Port.avalon_ps2_slave,(MASTER)VGA_Subsystem.pixel_dma_master,(SLAVE)AV_Config.avalon_av_config_slave,(SLAVE)VGA_Subsystem.pixel_dma_control_slave,(SLAVE)VGA_Subsystem.char_buffer_control_slave,(SLAVE)Nios2.debug_mem_slave,(MASTER)Nios2.instruction_master,(SLAVE)Green_LEDs.s1,(SLAVE)HEX3_HEX0.s1,(SLAVE)HEX7_HEX4.s1,(SLAVE)Interval_Timer.s1,(SLAVE)Interval_Timer_2.s1,(SLAVE)JTAG_UART.avalon_jtag_slave,(SLAVE)USB.avalon_usb_slave,(SLAVE)SRAM.avalon_sram_slave,(SLAVE)Nios2_2nd_Core.debug_mem_slave,(SLAVE)VGA_Subsystem.rgb_slave,(SLAVE)IrDA.avalon_irda_slave,(SLAVE)SDRAM.s1,(MASTER)Video_In_Subsystem.video_in_dma_master,(SLAVE)PS2_Port_Dual.avalon_ps2_slave,(SLAVE)Expansion_JP5.s1,(MASTER)Nios2.data_master,(SLAVE)Char_LCD_16x2.avalon_lcd_slave,(SLAVE)Flash.flash_data,(SLAVE)Slider_Switches.s1) 1 1 4 530 1510 960 1570 1380 1670 1940
+preplace netloc EXPORT<net_container>Computer_System</net_container>(SLAVE)Red_LEDs.external_connection,(SLAVE)Computer_System.red_leds) 1 0 4 NJ 1090 NJ 1090 NJ 1090 NJ
+preplace netloc POINT_TO_POINT<net_container>Computer_System</net_container>(SLAVE)VGA_Subsystem.vga_clk,(MASTER)Video_PLL.vga_clk) 1 1 1 450
+levelinfo -pg 1 0 140 2450
+levelinfo -hier Computer_System 150 230 740 1120 1580 2160 2340
